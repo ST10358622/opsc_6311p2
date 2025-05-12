@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral_variant70"
+    tools:context=".CategoryActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img"
+        tools:ignore="ContentDescription" />
+
+    <!-- Input field for category name -->
+    <Button
+        android:id="@+id/btnNEXT"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/material_dynamic_neutral_variant60"
+        android:text="Continue"
+        android:textColor="#454545"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/categoryInput"
+        android:layout_width="297dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="56dp"
+        android:hint="Enter category name"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        tools:ignore="Autofill,HardcodedText,MissingConstraints,TextFields" />
+
+    <!-- ListView to show added categories -->
+
+    <Button
+        android:id="@+id/addCategoryButton"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="132dp"
+        android:backgroundTint="@color/material_dynamic_neutral_variant60"
+        android:text="Add"
+        android:textColor="#454545"
+        app:layout_constraintStart_toEndOf="@+id/categoryInput"
+        app:layout_constraintTop_toBottomOf="@+id/btnNEXT"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/categoryLabel"
+        android:layout_width="92dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:text="Categories:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryInput"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <ListView
+        android:id="@+id/categoryListView"
+        android:layout_width="399dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryLabel"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="97dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="100dp"
+        android:text="Categories"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
