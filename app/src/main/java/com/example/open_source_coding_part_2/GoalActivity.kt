@@ -17,7 +17,7 @@ class GoalActivity : AppCompatActivity() {
         val minGoalInput = findViewById<EditText>(R.id.minGoalInput)
         val maxGoalInput = findViewById<EditText>(R.id.maxGoalInput)
         val saveButton = findViewById<Button>(R.id.saveButton)
-            //fghjk
+            //fghjkcfhfgh
         val list = findViewById<Button>(R.id.list)
         list?.setOnClickListener {
             val intent = Intent(this, ListActivity::class.java)
